@@ -1,0 +1,44 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+out/
+tmp/
+temp/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.log
+coverage/
+*.tgz
+
+# Store-rating app specific
+store-rating-app/.env
+store-rating-app/node_modules/
+store-rating-app/dist/
+store-rating-app/build/
+store-rating-app/coverage/
+store-rating-app/.DS_Store
+store-rating-app/.vscode/
+store-rating-app/.idea/
