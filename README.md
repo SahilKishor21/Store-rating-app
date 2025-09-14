@@ -387,7 +387,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Neon](https://neon.tech/) for reliable PostgreSQL hosting
 
 ---
-
-**Built with ❤️ using React, Express.js, and PostgreSQL**
-
-For questions or support, please open an issue or contact the development team.
