@@ -200,10 +200,10 @@ const LoginForm = () => {
               </Badge>
             </div>
             <p className="text-xs text-blue-800 dark:text-blue-300">
-              <strong>Admin:</strong> admin@storerating.com
+              <strong>Admin:</strong> test@admin.com
             </p>
             <p className="text-xs text-blue-800 dark:text-blue-300">
-              <strong>Password:</strong> Admin123!
+              <strong>Password:</strong> Test123!
             </p>
           </div>
         </CardContent>
