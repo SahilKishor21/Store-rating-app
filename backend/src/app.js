@@ -17,7 +17,7 @@ app.use(helmet());
 
 const limiter = rateLimit({
   windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000, 
-  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100,
+  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100, 
   message: {
     error: 'Too many requests from this IP, please try again later.'
   }
@@ -35,6 +35,15 @@ app.use(morgan('combined'));
 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+app.get('/api/test', (req, res) => {
+  res.json({
+    success: true,
+    message: 'CORS is working',
+    origin: req.get('Origin'),
+    headers: req.headers
+  });
+});
 
 app.get('/health', (req, res) => {
   res.status(200).json({
